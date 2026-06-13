@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin:15px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat' , 'sans-serif';
+    background-color: #f5ebe0 ;
+    color:  #f5ebe0;
+}
+header{
+    background: linear-gradient(to right , #4e342e, #6d4c41);
+    background-color: #3e2723;
+    text-align: center;
+    box-shadow: 0px 5px 12px  rgba(58, 15, 15, 0.89);
+    padding: 22px;
+}
+header h1{
+    font-size: 70px;
+    letter-spacing: 2px;
+    color: #f5d7c4;
+}
+header p{
+    margin-top: 12px;
+    font-size: 20px;
+    color: #f5d7c4;
+}
+nav{
+    background-color: #5d4037;
+    padding: 18px;
+    text-align: center;
+    top:0;
+    position: sticky;
+    box-shadow: 0px 5px 12px  rgba(58, 15, 15, 0.89);
+    padding: 22px;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    margin: 80px;
+    font-size: 20px;
+    font-weight: 700;
+    transition: 0.3s;
+    cursor: pointer;
+}
+nav a:hover{
+    color: #8f5704;
+}
+.hero{
+    height: 90vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.4),
+    rgba(0,0,0,0.4));
+    
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: rgba(58, 15, 15, 0.89);
+    box-shadow: 0px 5px 12px  rgba(58, 15, 15, 0.89);
+}
+.overlay h2{
+    font-family: cursive;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.overlay p{
+    font-size: 20px;
+    width: 70%;
+    margin: auto;
+    line-height: 1.8;
+    color: #3e2723;
+}
+.overlay button{
+    margin-top: 50px;
+    padding: 14px 30px;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: #310f04;
+    color: white;
+
+    font-size: 30px;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+.overlay button:hover{
+    background-color: #3e2723;
+}
+.hero img{
+    width: 85%;
+    max-width: 950px;
+    border-radius: 50px;
+    box-shadow: 0px 6px 15px rgba(0,0,0,0.3);
+}
+.about{
+    background-color: #5d4037;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0px 5px 12px  rgba(58, 15, 15, 0.89);
+}
+
+.about h2{
+    font-size: 36px;
+    color:rgba(248, 243, 243, 0.93);
+    margin-bottom: 20px;
+    font-size: 70px;
+}
+
+.about p{
+    font-size: 18px;
+    line-height: 1.9;
+    color: rgb(216, 208, 208);
+}
+
+.menu{
+    padding: 50px 20px;
+    text-align: center;
+    color: #3e2723;
+    box-shadow: 0px 5px 12px  rgba(58, 15, 15, 0.89);
+    background-color:rgba(0,0,0,0.4);
+    
+}
+
+.menu h2{
+    font-family: 'Montserrat' , 'sans-serif';
+    font-size: 60px;
+    color: rgba(58, 15, 15, 0.89);
+    margin-bottom: 20px;
+}
+
+.menu-items{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.card{
+    width: 260px;
+    background-color: #5d4037;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.15);
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+.card img{
+    width: 80%;
+    height: 220px;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+
+.card h3{
+    margin-top: 18px;
+    font-size: 25px;
+    color: white;
+}
+
+.card p{
+    padding: 15px;
+    font-size: 15px;
+    line-height: 1.7;
+    color: rgba(248, 243, 243, 0.93);
+}
+
+
+.contact{
+    background-color: #5d4037;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0px 5px 12px  rgba(58, 15, 15, 0.89);
+}
+
+.contact h2{
+    font-size: 50px;
+    margin-bottom: 20px;
+    color:rgba(248, 243, 243, 0.93);
+}
+
+.contact p{
+    margin: 12px;
+    font-size: 20px;
+    font-weight: 500;
+    color:rgba(248, 243, 243, 0.93);
+}
+
+footer{
+    background-color: #e7dcda;
+    color:#3e2723;
+    text-align: center;
+    padding: 22px;
+    margin-top: 40px;
+    font-size: 20px;
+    box-shadow: 0px 5px 12px  rgba(58, 15, 15, 0.89);
+}
+/* Tablet */
+
+@media screen and (max-width:992px){
+
+    .menu-items{
+        flex-wrap: wrap;
+    }
+
+    .card{
+        width: 300px;
+    }
+
+    header h1{
+        font-size: 50px;
+    }
+
+}
+
+/* Mobile */
+
+@media screen and (max-width:768px){
+
+    nav{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav a{
+        margin: 5px;
+        display: block;
+    }
+
+    header h1{
+        font-size: 35px;
+    }
+
+    .overlay h2{
+        font-size: 28px;
+    }
+
+    .overlay p{
+        width: 95%;
+        font-size: 16px;
+    }
+
+    .hero{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .hero img{
+        width: 95%;
+    }
+
+    .menu-items{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card{
+        width: 90%;
+    }
+
+    .about h2,
+    .menu h2,
+    .contact h2{
+        font-size: 35px;
+    }
+
+    .about p,
+    .contact p{
+        font-size: 16px;
+    }
+
+}
